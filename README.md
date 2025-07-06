@@ -8,7 +8,11 @@ _In this simulation, I first predicted the initial state using our LSTM model, t
 
 Predicting the underlying state of a physical system like a double pendulum from its motion is a classic inverse problem. The system is **chaotic**, meaning small changes in the initial state lead to wildly different outcomes. This project focuses on inferring that initial state using deep learning.
 
-##The Model Architecture
+![Double Pendulum Chaos](chaos.png)
+
+_Trajectories of a chaotic double pendulum for 100 different initial values of θ₁ (0.1 to 10 radians, θ₂ fixed at 2.0). Each colorful curve shows the tip’s path over 10 seconds, highlighting the system’s sensitivity to initial conditions._
+
+## The Model Architecture
 
 1. LSTM Layer
    The first part is a Long Short-Term Memory (LSTM) network. LSTMs are great for sequence data because they can “remember” information over long time spans. Here, the LSTM reads the entire sequence of 300 steps, each with 6 features.
