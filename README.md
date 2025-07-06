@@ -4,6 +4,8 @@ This project uses an LSTM-based neural network to predict the **initial state** 
 
 ![model demo ;)](comparision.gif)
 
+_In this simulation, I first predicted the initial state using our LSTM model, then used `compare_pen.py` to simulate both the predicted state and the true state for comparison._
+
 Predicting the underlying state of a physical system like a double pendulum from its motion is a classic inverse problem. The system is **chaotic**, meaning small changes in the initial state lead to wildly different outcomes. This project focuses on inferring that initial state using deep learning.
 
 ##The Model Architecture
