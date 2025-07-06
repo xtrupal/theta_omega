@@ -16,7 +16,7 @@ t_eval = np.linspace(0, T, T * FPS)
 max_len = L1 + L2
 
 # Output paths
-OUT_DIR = Path("hi_im_trupal")
+OUT_DIR = Path("dataset")
 (OUT_DIR / "trails").mkdir(parents=True, exist_ok=True)
 (OUT_DIR / "states").mkdir(parents=True, exist_ok=True)
 (OUT_DIR / "labels").mkdir(parents=True, exist_ok=True)
