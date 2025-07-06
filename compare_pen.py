@@ -7,7 +7,7 @@ from scipy.integrate import solve_ivp
 g = 9.81
 L1 = L2 = 1.5
 m1 = m2 = 1.0
-T = 7
+T = 5
 fps = 60
 t_eval = np.linspace(0, T, T * fps)
 
